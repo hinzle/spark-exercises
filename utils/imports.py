@@ -1,6 +1,6 @@
 # env
 import sys
-local_path = '/Users/hinzlehome/codeup-data-science/binance-project/'
+local_path = '/Users/hinzlehome/codeup-data-science/spark-exercises/'
 sys.path.insert(0,local_path+'.env')
 from env import *
 # # used for trouble shooting filepath issues
@@ -12,7 +12,7 @@ from env import *
 # jupyter nbconvert --to python explore.ipynb
 
 # local-host
-import unicodedata, itertools, re, requests, math, random, os, datetime, json, pprint
+import unicodedata, itertools, re, requests, math, random, os, datetime, json, pprint, sys
 
 # python data science library's
 import numpy as np
@@ -72,6 +72,12 @@ from bs4 import BeautifulSoup
 import nltk
 from nltk.tokenize.toktok import ToktokTokenizer
 from nltk.corpus import stopwords
+
+# pyspark
+import pyspark
+import pyspark.sql.functions as F
+os.environ['PYSPARK_PYTHON'] = sys.executable
+os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
 # state properties
 np.random.seed(123)
