@@ -10,6 +10,8 @@ from env import *
 # jupyter nbconvert --clear-output explore.ipynb
 # jupyter nbconvert --inplace --execute explore.ipynb
 # jupyter nbconvert --to python explore.ipynb
+# # should look something like this: git commit --date='2021-01-01 12:12:00' -m "message"
+# git commit --date='year-month-day hour:minutes:seconds' -m "message"
 
 # local-host
 import unicodedata, itertools, re, requests, math, random, os, datetime, json, pprint, sys
